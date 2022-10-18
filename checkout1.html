@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/844202b1c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="nav_container">
+        <div class="flex_logo col-2">
+            <!-- <img src="img/icon.jfif" class="icon">   -->
+            <p class="brand">Online Library</p>
+        </div>
+
+        <div class="flex_filter_search col-5">
+                <select name="genre" class="select_filter">
+                    <option disabled selected>Select Genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Science Fiction">Science Fiction </option>
+                </select>
+                <input type="text" placeholder="Search title or author of the book" class="search">
+        </div>
+
+        <div class="flex_hals col-5">
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Login</a>   
+            <a href="#">Signup</a>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Login</a>   
+                <a href="#">Signup</a>
+            </div>
+          </div>
+    </nav>
+
+<div class="div_form">
+    <form action="" method="" class="form_container">
+        <h2>Checkout Form</h2>
+        <div id="flc">
+            <div class="flc">
+                <label for="firstname" class="label">Firstname</label>
+                <input type="text" placeholder="ex. Juan" id="firstname" class="input-field">
+            </div>
+            <div class="flc">
+                <label for="lastname" class="label">Lastname</label>
+                <input type="text" placeholder="ex. Dela Cruz" id="lastname" class="input-field">
+            </div>
+            <div class="flc">
+                <label for="contact" class="label">Contact Number</label>
+                <input type="tel" placeholder="09********" id="contact" class="input-field">
+            </div>
+        </div>
+
+        <div id="address">
+            <div class="address">
+                <label for="address1" class="label">Address</label>  
+                <input type="text" class="input-field">
+            </div>
+            <div class="address">
+                <label for="address2" class="label">Address 2 (Optional)</label>  
+                <input type="text" class="input-field">   
+            </div>  
+        </div>
+
+        <div id="sel_type">
+            <div class="sel_country">
+                <label for="country" class="label">Country</label>
+                <select name="country" class="select_country">
+                    <option disabled selected>Select Country</option>
+                    <option value="PH">Philippines</option>
+                    <option value="US">USA</option>
+                    <option value="RUS">Russia</option>
+                    <option value="CHI">China</option>
+                    <option value="JPN">Japan</option>
+                    <option value="Country Roads">Country Roads</option>
+                </select>
+            </div>
+
+            <div class="sel_city">
+                <label for="city" class="label">City</label>
+                <select name="city" class="select_city">
+                    <option disabled selected>Select City</option>
+                    <option value="PH">City 1</option>
+                    <option value="US">City 2</option>
+                    <option value="RUS">City 3</option>
+                    <option value="CHI">City 4</option>
+                    <option value="JPN">City 5</option>
+                    <option value="Star City">Star City</option>
+                </select>
+            </div>
+
+            <div class="zip">
+                <label for="Zip" class="label">Zip</label>
+                <input type="tel" placeholder="5400" id="zip" class="input-field">
+            </div>
+        </div>
+                <hr>
+
+        <div id="payment">
+            <h2 id="label_payment">Payment</h2>
+            <div id="sel_payment">
+                <input type="radio" id="credit" name="pay_method" value="Credit">
+                <label for="credit" class="label">Credit Card</label>
+                <input type="radio" name="pay_method" value="COD">
+                <label for="cod" class="label">Cash on Delivery</label>
+                <input type="radio" id="gcash" name="pay_method" value="GCash">
+                <label for="gcash" class="label">GCash</label>
+            </div>
+        </div>
+        <div id="button_check">
+            <button type="submit" class="checkoutP">Checkout</button>
+            <a href="index.html"><button type="button" class="cancel">Cancel</button></a>
+        </div>
+            <!-- <div id="item">
+                <div>
+                    <h2 id="label_item">Book Description</h2>
+                </div>
+                <div id="prod_post">
+                    <div id="pic1">
+                        <img src="img/image1.jpg" class="pic1">
+                    </div>
+    
+                    <div id="prod_desc">
+                        <label>Title: To kill a Mockingbird</label><br>                        
+                        <label>Author: Harper Lee</label><br>
+                        <label>Date Published: July 11, 1960</label><br>
+                        <label>Price: ???</label>
+                    </div>
+                </div>
+            </div> -->
+        </form>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+        
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>

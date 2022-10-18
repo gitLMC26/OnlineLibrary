@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://css.gg/menu-left.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/844202b1c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="nav_container">
+        <div class="flex_logo col-2"> 
+            <p class="brand">Online Library</p>
+        </div>
+
+        <div class="flex_filter_search col-5">
+                <select name="genre" class="select_filter">
+                    <option disabled selected>Select Genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Science Fiction">Science Fiction </option>
+                </select>
+                <input type="text" placeholder="Search title or author of the book" class="search">
+        </div>
+
+        <div class="flex_hals col-5">
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Login</a>   
+            <a href="#">Signup</a>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Login</a>   
+                <a href="#">Signup</a>
+            </div>
+          </div>
+    </nav>
+
+    <div class="book_container">
+        <div class="card">
+            <img src="img/image1.jpg">
+            <div class="book_info">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="hide">Aliquid saepe aliquam hic aperiam nemo deserunt, autem odio natus? Reprehenderit saepe officiis laboriosam laborum vel cupiditate in, nemo earum iusto voluptatibus.</span>
+                    <span class="read-more"><a href="#">Read more....</a></span>
+                </p>
+                <div class="buttons">
+                    <a class="btn_cart" href="#"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></a>
+                    <a class="btn_wishlist" href="#"><i class="fa-solid fa-plus"></i><span>Wishlist</span></a>
+                    <a class="btn_buy" href="checkout1.html"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="img/image2.jpg">
+            <div class="book_info">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <div class="buttons">
+                    <a class="btn_cart" href="#"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></a>
+                    <a class="btn_wishlist" href="#"><i class="fa-solid fa-plus"></i><span>Wishlist</span></a>
+                    <a href="checkout1.html" class="btn_buy"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/image3.jpg">
+            <div class="book_info">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid saepe aliquam hic aperiam nemo deserunt, autem odio natus? Reprehenderit saepe officiis laboriosam laborum vel cupiditate in, nemo earum iusto voluptatibus.
+                </p>
+                <div class="buttons">
+                    <a class="btn_cart" href="#"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></a>
+                    <a class="btn_wishlist" href="#"><i class="fa-solid fa-plus"></i><span>Wishlist</span></a>
+                    <a class="btn_buy" href="checkout1.html"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/image4.jpg">
+            <div class="book_info">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid saepe aliquam hic aperiam nemo deserunt, autem odio natus? Reprehenderit saepe officiis laboriosam laborum vel cupiditate in, nemo earum iusto voluptatibus.
+                </p>
+                <div class="buttons">
+                    <a class="btn_cart" href="#"><i class="fa-solid fa-cart-plus"></i><span>Add to Cart</span></a>
+                    <a class="btn_wishlist" href="#"><i class="fa-solid fa-plus"></i><span>Wishlist</span></a>
+                    <a class="btn_buy" href="checkout1.html"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

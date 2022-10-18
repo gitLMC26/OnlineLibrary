@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@300&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Fuzzy+Bubbles:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Comforter+Brush&family=Fuzzy+Bubbles:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}    
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body{
+    margin: 0;
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(35, 35, 35); 
+}
+
+.flex_logo{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* justify-content: center ; */
+    align-items: center;
+    width: auto;
+    height: auto;  
+}
+
+.brand{
+    /* display: flex;
+    flex-wrap: wrap; */
+    color: #ff9500;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    background-color: #39311c;
+    /* font-family: 'Alkalami', serif; */
+    font-family: 'Comforter Brush', cursive;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.icon{
+    flex: 0;
+    width: 60px;
+    height: auto;
+}
+/* Filter Search Div */
+.flex_filter_search{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+/* search field */
+.search{
+    /* display: flex; */
+    flex: 3;
+    border-radius: 3px;
+    padding: 10px;
+    min-width: 0px;
+    height: auto;
+    border: 1px solid rgb(102, 101, 101);
+}
+
+/* Select field */
+.select_filter{
+    /* display: flex; */
+    flex: 1;
+    height: auto;
+    min-width: 0px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(102, 101, 101);
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;  
+    font-weight: bold;
+}
+
+.flex_hals{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_hals a{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex_hals a:hover{
+    /* justify-content: center;
+    align-items: center; */
+    height: auto;
+    width: auto;
+    color: rgb(250, 255, 159);
+    text-decoration: none;
+    font-size: large;
+}
+
+.dropdown{
+    display: none;
+}
+/* Books ________________________________________________________________________________ */
+ 
+.book_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.book_container .card{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    background-color: #e4a753;
+    width: 250px;
+    height: auto;
+}
+
+.card{
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 0 0 0;
+}
+
+.book_info{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.book_info p{
+    padding: 10px;
+    text-align: center;
+}
+
+.book_info .read-more{
+    display: none;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.btn_cart{
+    background-color:  rgb(255, 221, 121);
+    text-decoration: none;
+    color: black;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.btn_wishlist{
+    background-color:  rgb(255, 221, 121);
+    color: black;
+    text-decoration: none;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.btn_buy{
+    background-color:  rgb(255, 221, 121);
+    color: black;
+    text-decoration: none;
+    flex: 3;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+    margin: 1px;
+}
+
+.buttons i{
+    font-size: larger;
+}
+
+/* Checkout Form_________________________________________________________________________________ */
+.div_form{
+    background-color: #e4a753;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin:0 20% 0 20%;
+}
+
+h2{
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#flc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flc{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 10px;
+    width: auto;
+}
+
+.flc .label{    
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.flc .input-field{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.21);
+    padding: 10px;
+}
+
+#address{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.address{
+    display: flex;
+    flex: 1;
+    width: auto;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.address .label{
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.address .input-field{
+    width: auto;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.21);
+    padding: 10px;
+}   
+
+#sel_type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.sel_country{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: auto;
+    margin: 10px;
+}
+
+.sel_city{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: auto;
+    margin: 10px;
+}
+
+.zip{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: auto;
+    margin: 10px;
+}
+
+.select_country, .select_city{
+    padding: 10px;
+}
+
+#sel_type .label{
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.zip .input-field{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.21);
+    padding: 10px;
+    width: auto;
+}
+
+#payment{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sel_payment{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#label_payment{
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#payment .label{
+    font-family: 'Alkalami', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+#button_check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.checkoutP{
+    padding: 10px;
+    width: 100px;
+    margin-right: 2.5px;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid rgb(20, 16, 16);
+}
+
+.checkoutP:hover{
+    background-color: rgb(111, 110, 110);
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.cancel{
+    width: 100px;
+    padding: 10px;
+    margin-left: 2.5px;
+    background-color: rgb(255, 103, 103);
+    border: 1px solid rgb(20, 16, 16);   
+}
+
+.cancel:hover{
+    background-color: rgb(255, 103, 103);
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* __________________________________ */
+@media screen and (max-width: 540px) {
+    body{
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .nav_container{
+        width: auto;
+    }
+
+    .flex_logo{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 60px;    
+    }
+
+    .brand{
+        width: auto;
+        height: auto;
+        font-size: 10px;
+    }
+
+    .flex_hals{
+        justify-content: space-around;
+        display: none;
+    }
+
+    .book_container{
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 12px; */
+    }
+
+    .book_container .card{
+        flex-direction: row;
+        height: auto;
+        width: 95%;
+        border-radius: 20px 0 20px 0;
+    }
+
+    .card img{
+        height: auto;
+        width: 150px;
+    }
+
+    .book_info{
+        flex: 1;
+        height: auto;
+        background-color:  rgb(206, 124, 0);
+    }
+
+    .book_info .hide{
+        display: none;
+    }
+
+    .book-info .read-more{
+        display: inline;
+    }
+
+    .btn_buy{
+        border-radius: 0;
+    }
+
+    .form_container{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #flc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #address{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sel_city, .zip .input-field{
+        min-width: 133px;
+    }
+
+    #sel_payment{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: center ;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------------- Dropdown Design -------------------------------------*/
+    .dropbtn {
+        background-color: rgb(22, 15, 15);
+        color: #ffffff;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #ffffff;
+        color: rgb(22, 15, 15);
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        /* position: relative;
+        display: inline-block; */
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        margin-top: 180px;
+        position: relative;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+      }
+    /* ------------------------------------------------------------------------------ */
+}
